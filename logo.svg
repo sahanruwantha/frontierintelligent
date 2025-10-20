@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#071127"/>
+  <g transform="translate(20,20)">
+    <circle cx="40" cy="40" r="28" fill="url(#g)"/>
+    <path d="M10 50 L30 20 L50 50 Z" fill="white" opacity="0.95" transform="translate(0,0)"/>
+  </g>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff">
+        <animate attributeName="stop-color" dur="6s" repeatCount="indefinite" values="#7c5cff;#5ad1ff;#7c5cff" />
+      </stop>
+      <stop offset="1" stop-color="#00e0b8">
+        <animate attributeName="stop-color" dur="6s" repeatCount="indefinite" values="#00e0b8;#8b5cff;#00e0b8" />
+      </stop>
+    </linearGradient>
+  </defs>
+  <style>
+    g { transform-origin: 60px 60px; animation: float 6s ease-in-out infinite; }
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-4px) rotate(-2deg)}100%{transform:translateY(0)}}
+  </style>
+</svg>

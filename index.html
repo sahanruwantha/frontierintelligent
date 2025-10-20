@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Frontier Intelligent — Redefining Tomorrow</title>
+  <meta name="description" content="Frontier Intelligent: AI-first solutions shaping the future of technology."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#" aria-label="Frontier Intelligent home">
+        <img src="logo.svg" alt="Frontier Intelligent logo" class="logo">
+        <span class="brand-text">Frontier Intelligent</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <canvas id="bg-canvas"></canvas>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="headline">We build intelligent systems that</h1>
+          <h2 class="typed" aria-live="polite"></h2>
+          <p class="tagline">Scaling AI, automation and device intelligence for the industries of tomorrow.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Get Started</a>
+            <a class="btn ghost" href="#about">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-cards">
+          <div class="card" data-tilt>
+            <h3>Adaptive AI</h3>
+            <p>Models that evolve with your data and deliver robust predictions at scale.</p>
+          </div>
+          <div class="card" data-tilt>
+            <h3>Edge Intelligence</h3>
+            <p>Bring low-latency inference to devices with compact, efficient deployments.</p>
+          </div>
+          <div class="card" data-tilt>
+            <h3>Secure Automation</h3>
+            <p>Automate complex workflows while keeping security and compliance front and center.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" id="solutions">
+      <h2 class="section-title">What we do</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <div class="icon">🤖</div>
+          <h3>Custom AI</h3>
+          <p>End-to-end ML lifecycle: data, models, deployment, monitoring.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">⚙️</div>
+          <h3>Systems Design</h3>
+          <p>Architect resilient pipelines and distributed systems for demanding workloads.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">🔒</div>
+          <h3>Trust & Safety</h3>
+          <p>Privacy-first engineering, secure models, and explainability tooling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-copy">
+          <h2>About Frontier Intelligent</h2>
+          <p>We combine research-grade machine learning, systems engineering, and responsible deployment to help enterprises realize the next generation of intelligent products.</p>
+          <ul>
+            <li>Founded by researchers and engineers from top AI teams</li>
+            <li>Focus on measurable business impact</li>
+            <li>Partner-first approach with transparent roadmaps</li>
+          </ul>
+        </div>
+        <div class="about-media" aria-hidden="true">
+          <div class="mock-device">
+            <div class="screen"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team container" id="team">
+      <h2 class="section-title">Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <div class="avatar" aria-hidden="true">AJ</div>
+          <h4>Alex Johnson</h4>
+          <p>CTO & Co-founder</p>
+        </div>
+        <div class="member">
+          <div class="avatar" aria-hidden="true">PP</div>
+          <h4>Priya Patel</h4>
+          <p>Head of ML</p>
+        </div>
+        <div class="member">
+          <div class="avatar" aria-hidden="true">SL</div>
+          <h4>Sam Lee</h4>
+          <p>Systems Lead</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Let's build something transformative. Tell us about your project.</p>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="row">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <textarea placeholder="Your message" rows="5" required></textarea>
+        <div class="row">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Frontier Intelligent</div>
+      <div class="foot-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
